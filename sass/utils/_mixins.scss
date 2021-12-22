@@ -2,3 +2,21 @@
   font-size: $fz;
   line-height: $lh;
 }
+
+@mixin ml-30() {
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+@mixin ml-30-2n {
+  &:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@mixin mb-30-nplus2 {
+  &:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}

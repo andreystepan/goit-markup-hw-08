@@ -34,17 +34,30 @@ ul {
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .section {
-  padding: 94px 0;
+  // padding: 94px 0;
+  padding: 60px 0;
 }
 address {
   font-style: normal;
