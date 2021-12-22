@@ -1,0 +1,7 @@
+.label {
+  display: block;
+  text-align: left;
+  @include font(12px, 1.17);
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}

@@ -1,0 +1,15 @@
+.header {
+  border-bottom: 1px solid $primary-shade2-color;
+}
+
+.header__list {
+  @extend %align-list;
+}
+
+.header__nav {
+  margin-left: 93px;
+}
+
+.header__contact {
+  margin-left: auto;
+}

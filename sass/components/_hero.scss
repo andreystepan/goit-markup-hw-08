@@ -1,0 +1,22 @@
+.hero {
+  background-color: $secondary-shade2-color;
+  text-align: center;
+  padding: 200px 0;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba($secondary-shade2-color, 0.4),
+      rgba($secondary-shade2-color, 0.4)
+    ),
+    url("../images/hero-img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero__title {
+  color: $primary-color;
+  font-weight: 900;
+  @include font(44px, 1.36);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}

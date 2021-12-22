@@ -1,0 +1,31 @@
+.section-quality {
+  padding-bottom: 47px;
+}
+.quality-list {
+  display: flex;
+}
+.quality-list__item {
+  @extend %ml-30;
+}
+.quality-list__title {
+  color: $secondary-shade-color;
+  @include font(14px, 1.14);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.quality-list__text {
+  @include font(14px, 1.71);
+}
+
+.quality-list__icon-wrapper {
+  display: flex;
+  background: $primary-shade-color;
+  margin-bottom: 30px;
+  padding: 25px 0px;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.quality-list__icon {
+  display: block;
+}

@@ -1,0 +1,15 @@
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  border: 1px solid rgba($primary-color, 0.3);
+  border-radius: 4px;
+  background-color: $secondary-shade2-color;
+  outline: none;
+  color: $primary-color;
+}

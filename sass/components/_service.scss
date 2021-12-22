@@ -1,0 +1,32 @@
+.section-company {
+  padding-top: 47px;
+}
+.service-list {
+  display: flex;
+}
+
+.service-list__item {
+  @extend %ml-30;
+}
+.service-list__img-wrapper {
+  position: relative;
+}
+
+.service-list__overlay {
+  position: absolute;
+  @extend %align-list;
+  justify-content: center;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 70px;
+
+  background-color: rgba($secondary-shade2-color, 0.8);
+}
+
+.service-list__overlay-text {
+  font-weight: 700;
+  @include font(14px, 1.14);
+  text-transform: uppercase;
+  color: $primary-color;
+}

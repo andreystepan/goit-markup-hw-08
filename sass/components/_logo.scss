@@ -1,0 +1,13 @@
+.logo {
+  color: $accent-color;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  @include font(26px, 1.2);
+}
+.logo__studio {
+  color: $secondary-color;
+}
+.logo__studio--secondary {
+  color: $primary-color;
+}

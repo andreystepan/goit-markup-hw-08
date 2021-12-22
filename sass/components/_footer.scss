@@ -1,0 +1,28 @@
+.footer {
+  background-color: $secondary-shade2-color;
+  padding: 60px 0;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.address__footer {
+  margin-top: 20px;
+}
+
+.footer__social {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+.footer__title {
+  @include font(14px, 1.14);
+  color: $primary-color;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__subscribe {
+  margin-left: auto;
+  margin-top: 12px;
+}

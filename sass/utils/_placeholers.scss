@@ -1,0 +1,10 @@
+%align-list {
+  display: flex;
+  align-items: center;
+}
+
+%ml-30 {
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
