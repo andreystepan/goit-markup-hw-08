@@ -1,4 +1,7 @@
 .section-company {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   padding-top: 47px;
 }
 .service-list {

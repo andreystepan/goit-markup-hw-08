@@ -15,7 +15,7 @@
     0px 1px 1px rgba($secondary-color, 0.14),
     0px 2px 1px rgba($secondary-color, 0.2);
   &:not(:last-child) {
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
   }

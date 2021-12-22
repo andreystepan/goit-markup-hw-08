@@ -56,8 +56,10 @@ img {
 }
 
 .section {
-  // padding: 94px 0;
   padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 address {
   font-style: normal;

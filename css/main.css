@@ -68,6 +68,12 @@ img {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
 address {
   font-style: normal;
 }
@@ -143,7 +149,7 @@ address {
   align-items: center;
 }
 
-.quality-list__item:not(:first-child), .service-list__item:not(:first-child), .clients__item:not(:first-child) {
+.service-list__item:not(:first-child), .clients__item:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -282,12 +288,50 @@ address {
   margin-bottom: 30px;
 }
 
-.section-quality {
-  padding-bottom: 47px;
+@media screen and (min-width: 1200px) {
+  .section-quality {
+    padding-bottom: 47px;
+  }
 }
 
-.quality-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .quality-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .quality-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .quality-list__item {
+    width: calc(100% / 2 - 15px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .quality-list__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .quality-list__item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .quality-list__item {
+    width: calc((100% - 90px) / 4);
+  }
+  .quality-list__item:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .quality-list__title {
@@ -296,6 +340,12 @@ address {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .quality-list__title {
+    text-align: center;
+  }
 }
 
 .quality-list__text {
@@ -318,6 +368,12 @@ address {
 
 .section-company {
   padding-top: 47px;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-company {
+    display: none;
+  }
 }
 
 .service-list {
@@ -361,7 +417,7 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .team-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
