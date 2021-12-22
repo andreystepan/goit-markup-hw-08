@@ -4,14 +4,21 @@
 }
 .checkbox__label {
   @extend %align-list;
-  @include font(14px, 1.71);
+  @include font(12px, 1.17);
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 1.71);
+  }
 }
 
 .contract__link {
-  @include font(14px, 1.71);
+  // @include font(14px, 1.71);
+  @include font(12px, 1.17);
   color: $accent-color;
-  margin-left: 7px;
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 1.71);
+  }
 }
+
 .checkbox__icon-wrapper {
   @extend %align-list;
   justify-content: center;

@@ -1,10 +1,11 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
 }
 .clients__link {
   display: flex;
   justify-content: center;
-  width: 170px;
+  width: 100%;
   padding: 16px 0;
   border: 1px solid $secondary-shade4-color;
   border-radius: 4px;
@@ -18,7 +19,35 @@
   }
 }
 .clients__item {
-  @extend %ml-30;
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 30px) / 2);
+    @include ml-30-2n;
+  }
+  &:nth-child(-n + 4) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  &:not(:nth-child(3n + 1)) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 30px;
+    }
+  }
+  &:nth-child(-n + 3) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+    @include ml-30;
+  }
 }
 .clients__icon {
   fill: currentColor;
