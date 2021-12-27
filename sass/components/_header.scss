@@ -1,15 +1,31 @@
 .header {
   border-bottom: 1px solid $primary-shade2-color;
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+  }
 }
 
 .header__list {
-  @extend %align-list;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__nav {
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .header__contact {
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    margin-top: auto;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 }

@@ -1,0 +1,29 @@
+.header__social {
+  margin-top: 64px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.secondary-social-list {
+  display: flex;
+}
+
+.secondary-social-list__link {
+  text-decoration: none;
+  @include font(22px, 1.22);
+  color: $accent-color;
+  margin: 0 10px;
+}
+
+.secondary-social-list__item {
+  &:not(:last-child) {
+    border-right: 1px solid rgba($secondary-shade-color, 0.2);
+  }
+  &:first-child {
+    margin-left: -10px;
+  }
+  &:last-child {
+    margin-right: -10px;
+  }
+}

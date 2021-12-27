@@ -69,3 +69,40 @@
 .close-button__icon {
   fill: currentColor;
 }
+
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 5;
+
+  & .menu-button__icon-close {
+    display: none;
+  }
+
+  &.is-open .menu-button__icon-close {
+    display: block;
+  }
+
+  &.is-open .menu-button__icon-menu {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button__icon-menu,
+.menu-button__icon-close {
+  fill: currentColor;
+}
