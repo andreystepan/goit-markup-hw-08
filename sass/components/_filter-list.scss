@@ -1,12 +1,24 @@
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 
 .filter-list__item {
-  margin-left: 0px;
-  &:not(:first-child) {
-    margin-left: 8px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
   }
 }
