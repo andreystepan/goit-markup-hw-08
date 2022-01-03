@@ -44,6 +44,18 @@
   }
 }
 
+.contact-list__link--accent-color {
+  @media screen and (max-width: 767px) {
+    color: $accent-color;
+  }
+}
+
+.contact-list__link--big-size {
+  @media screen and (max-width: 767px) {
+    @include font(34px, 1.18);
+  }
+}
+
 .contact-list__icon {
   @media screen and (max-width: 767px) {
     display: none;

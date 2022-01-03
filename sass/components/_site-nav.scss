@@ -33,15 +33,15 @@
   &:focus {
     color: $accent-color;
   }
-  &.site-nav__current {
+  &.site-nav__link--current {
+    color: $accent-color;
     @media screen and (min-width: 768px) {
-      color: $accent-color;
       position: relative;
     }
   }
 }
 
-.site-nav__current {
+.site-nav__link--current {
   @media screen and (min-width: 768px) {
     &::after {
       content: "";

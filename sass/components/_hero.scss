@@ -1,7 +1,6 @@
 .hero {
   background-color: $secondary-shade2-color;
   text-align: center;
-  padding: 200px 0;
   width: 100%;
   margin: 0 auto;
   background-image: linear-gradient(
@@ -11,6 +10,9 @@
     url("../images/hero-img-mob-1x.jpg");
   background-size: cover;
   background-position: center;
+  @media screen and (max-width: 1199px) {
+    padding: 118px 0;
+  }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -38,6 +40,7 @@
     }
   }
   @media screen and (min-width: 1200px) {
+    padding: 200px 0;
     background-image: linear-gradient(
         rgba($secondary-shade2-color, 0.4),
         rgba($secondary-shade2-color, 0.4)

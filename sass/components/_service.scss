@@ -6,10 +6,12 @@
 }
 .service-list {
   display: flex;
+  margin: -15px;
 }
 
 .service-list__item {
-  @extend %ml-30;
+  margin: 15px;
+  width: calc(100% / 3 - 30px);
 }
 .service-list__img-wrapper {
   position: relative;
