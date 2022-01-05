@@ -11,6 +11,9 @@
   }
 }
 .quality-list__item {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: 768px) {
     margin: 15px;
     width: calc(100% / 2 - 30px);
