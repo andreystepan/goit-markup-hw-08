@@ -422,7 +422,12 @@ address {
   }
 }
 
-@media screen and (max-width: 767px) {
+.contact-list__link--big-size {
+  font-size: 27px;
+  line-height: 1.18;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .contact-list__link--big-size {
     font-size: 34px;
     line-height: 1.18;
@@ -1229,10 +1234,11 @@ address {
 
 .secondary-social-list__link {
   text-decoration: none;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   color: #2196f3;
-  margin: 0 10px;
+  margin-right: 10px;
 }
 
 .secondary-social-list__item {
@@ -1241,13 +1247,6 @@ address {
 
 .secondary-social-list__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.secondary-social-list__item:first-child {
-  margin-left: -10px;
-}
-
-.secondary-social-list__item:last-child {
-  margin-right: -10px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */
