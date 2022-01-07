@@ -51,7 +51,10 @@
 }
 
 .contact-list__link--big-size {
-  @include font(27px, 1.18);
+  @media screen and (max-width: 479px) {
+    @include font(27px, 1.18);
+  }
+
   @media screen and (min-width: 480px) and (max-width: 767px) {
     @include font(34px, 1.18);
   }

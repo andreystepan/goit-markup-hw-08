@@ -422,9 +422,11 @@ address {
   }
 }
 
-.contact-list__link--big-size {
-  font-size: 27px;
-  line-height: 1.18;
+@media screen and (max-width: 479px) {
+  .contact-list__link--big-size {
+    font-size: 27px;
+    line-height: 1.18;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
